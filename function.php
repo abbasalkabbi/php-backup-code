@@ -9,6 +9,7 @@
     ?></title>
 </head>
 <body>
+<h1>function single value</h1>
     <?php
     // function normal
     function sum($num1,$num2)
@@ -32,5 +33,29 @@
      $results=f2(4);
      echo"results:{$results}</br>";
     ?>
+    <h1>function multiole value</h1>
+    <?php
+    //function multiole value
+    $results=operations(3,7);
+echo print_r($results);
+    foreach($results as &$v){
+    echo "<h3>".$v ."</h3>";
+   }
+
+  function operations($n1,$n2)
+{
+	$arr=array();
+	 $arr[]="sum:".($n1+$n2);
+	 $arr[]='sub:'.($n1-$n2);
+	 $arr[]='div:'.($n1/$n2);
+	 $arr[]="mul:".($n1*$n2);
+
+	    return $arr ;
+	 
+}
+?>
+
+
+
 </body>
 </html>
