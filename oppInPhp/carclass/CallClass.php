@@ -1,6 +1,6 @@
 <?php
 
-require('ClassCar.php');
+require('ClassCar.inc');
 
 $mycar1=new car();
     $mycar1->Color="red";
